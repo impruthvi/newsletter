@@ -74,7 +74,20 @@ app.post('/',function(req,res){
     
 });
 
-app.listen(2000,function(){
+
+// for hiruko server
+// app.listen(process.env.PORT,function(){
+//     console.log('start');
+// });
+
+// for js server
+// app.listen(2000,function(){
+//     console.log('start');
+// });
+
+// for both
+
+app.listen(process.env.PORT || 2000,function(){
     console.log('start');
 });
 
